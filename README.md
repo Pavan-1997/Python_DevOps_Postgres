@@ -51,4 +51,5 @@
 
 13. **Completing the PostgreSQL Setup**:
 
-    - Once
+    - Once the installation is complete, you'll see a screen indicating the success of the installation. Click "Finish" to close the wizard.
+
