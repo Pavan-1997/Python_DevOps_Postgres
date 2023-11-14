@@ -25,3 +25,18 @@
 
    - Choose the data directory where PostgreSQL will store its data. The default location is also fine. Click "Next".
 
+7. **Password**:
+
+   - Set a password for the PostgreSQL superuser (called `postgres` by default). Make sure to remember this password, as you'll need it to access the database later. Click "Next".
+
+8. **Port Configuration**:
+
+   - Choose the port number for PostgreSQL. The default port is 5432. Click "Next".
+
+9. **Locale**:
+
+   - Select the locale that matches your system. The default locale is usually fine. Click "Next".
+
+10. **Ready to Install**:
+
+   - Review the summary of your selections. If everything looks correct, click "Next".
