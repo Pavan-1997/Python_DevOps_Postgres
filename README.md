@@ -1,7 +1,7 @@
 # Python_DevOps_Postgres 
      
 1. **Download PostgreSQL**:   
-
+ 
    - Go to the official PostgreSQL download page: [https://www.postgresql.org/download/windows/](https://www.postgresql.org/download/windows/)
    - Select the version that you want to install (e.g., PostgreSQL 14.0) and click on the download link appropriate for your system (32-bit or 64-bit).
 
