@@ -146,3 +146,6 @@ for row in data:
     print(row)
 ```
 
+Remember to handle exceptions, commit changes, and close connections appropriately in a production environment. Also, be cautious with user inputs to prevent SQL injection attacks.
+
+Make sure to adapt the code to your specific database and table names.
