@@ -40,3 +40,15 @@
 10. **Ready to Install**:
 
    - Review the summary of your selections. If everything looks correct, click "Next".
+
+11. **Installation Progress**:
+
+    - The installer will now install PostgreSQL on your system. This may take a few minutes.
+
+12. **Stack Builder** (optional):
+
+    - The Stack Builder is a tool that allows you to download and install additional tools and drivers that work with PostgreSQL. You can skip this for now if you don't need it.
+
+13. **Completing the PostgreSQL Setup**:
+
+    - Once
