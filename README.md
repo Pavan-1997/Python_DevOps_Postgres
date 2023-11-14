@@ -53,3 +53,12 @@
 
     - Once the installation is complete, you'll see a screen indicating the success of the installation. Click "Finish" to close the wizard.
 
+## Connect to Postgres 
+
+To interact with PostgreSQL databases using Python, you'll need to use a library that provides a connection interface. The most commonly used library for this purpose is `psycopg2`. If you haven't already installed it, you can do so using `pip`:
+
+```bash
+pip install psycopg2
+```
+
+Here are Python programs for the tasks you mentioned:
