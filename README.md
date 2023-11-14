@@ -62,3 +62,87 @@ pip install psycopg2
 ```
 
 Here are Python programs for the tasks you mentioned:
+
+### 1. Connect to PostgreSQL:
+
+```python
+import psycopg2
+
+# Connect to the PostgreSQL database
+conn = psycopg2.connect(
+    database="your_database_name",
+    user="your_username",
+    password="your_password",
+    host="your_host",
+    port="your_port"
+)
+
+conn.autocommit = True
+
+# Create a cursor object
+cur = conn.cursor()
+
+# Execute SQL queries here
+
+# Close the cursor and connection
+cur.close()
+conn.close()
+```
+
+Replace the placeholders (`your_database_name`, `your_username`, `your_password`, `your_host`, `your_port`) with your actual PostgreSQL database information.
+
+### 2. Create Database:
+
+```python
+# Execute SQL to create a database
+cur.execute('CREATE DATABASE new_database;')
+```
+
+### 3. View Databases:
+
+```python
+# Execute SQL to view all databases
+cur.execute('SELECT datname FROM pg_database;')
+databases = cur.fetchall()
+print(databases)
+```
+
+### 4. Create Table:
+
+```python
+# Execute SQL to create a table
+cur.execute('''
+    CREATE TABLE my_table (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(100),
+        age INT
+    );
+''')
+```
+
+### 5. Insert Data:
+
+```python
+# Execute SQL to insert data into the table
+cur.execute("INSERT INTO my_table (name, age) VALUES (%s, %s);", ('John Doe', 30))
+```
+
+### 6. View Tables:
+
+```python
+# Execute SQL to view all tables
+cur.execute("SELECT table_name FROM information_schema.tables WHERE table_schema='public';")
+tables = cur.fetchall()
+print(tables)
+```
+
+### 7. View Data:
+
+```python
+# Execute SQL to view data from a table
+cur.execute("SELECT * FROM my_table;")
+data = cur.fetchall()
+for row in data:
+    print(row)
+```
+
